@@ -111,19 +111,6 @@ public class BaseCategory2Controller {
 
     }
 
-
-//    @MybatisPlusTest
-//    class MybatisPlusSampleTest {
-//
-//        @Autowired
-//        private SampleMapper sampleMapper;
-//
-//       @Test
-//       public void testInsert() {
-//            Sample sample = new Sample();
-//            sampleMapper.insert(sample);
-//            AbstractIntegerAssert<?> notNull = assertThat(sample.getId()).isNotNull();
-//            System.out.println("notNull = " + notNull);
-//        }
-//    }
 }
+
+
