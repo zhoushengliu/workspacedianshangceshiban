@@ -109,18 +109,4 @@ public class BaseCategory2Controller {
     }
 
 
-
-    @MybatisPlusTest
-    class MybatisPlusSampleTest {
-
-        @Autowired
-        private SampleMapper sampleMapper;
-
-        @Test
-        void testInsert() {
-            Sample sample = new Sample();
-            sampleMapper.insert(sample);
-            assertThat(sample.getId()).isNotNull();
-        }
-    }
 }
