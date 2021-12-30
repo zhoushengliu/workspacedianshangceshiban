@@ -2,14 +2,17 @@ package com.atguigu.gmall.product.controller;
 
 import com.atguigu.gmall.common.result.Result;
 import com.atguigu.gmall.model.product.BaseCategory2;
+import com.atguigu.gmall.product.mapper.SampleMapper;
+import com.atguigu.gmall.product.pojo.Sample;
 import com.atguigu.gmall.product.service.BaseCategory2Service;
 import com.baomidou.mybatisplus.test.autoconfigure.MybatisPlusTest;
-import org.apache.ibatis.javassist.tools.reflect.Sample;
-import org.junit.jupiter.api.Test;
+
+import org.assertj.core.api.AbstractIntegerAssert;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
-
+import static org.assertj.core.api.Assertions.assertThat;
 /**
  * @author 琉
  * @create 2021-12-16 22:59
@@ -109,4 +112,18 @@ public class BaseCategory2Controller {
     }
 
 
+//    @MybatisPlusTest
+//    class MybatisPlusSampleTest {
+//
+//        @Autowired
+//        private SampleMapper sampleMapper;
+//
+//       @Test
+//       public void testInsert() {
+//            Sample sample = new Sample();
+//            sampleMapper.insert(sample);
+//            AbstractIntegerAssert<?> notNull = assertThat(sample.getId()).isNotNull();
+//            System.out.println("notNull = " + notNull);
+//        }
+//    }
 }
